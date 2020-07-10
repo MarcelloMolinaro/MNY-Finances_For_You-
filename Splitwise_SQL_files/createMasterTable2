@@ -1,0 +1,42 @@
+CREATE TABLE testMaster2 (
+tableID INTEGER NOT NULL PRIMARY KEY,
+expenseID INTEGER,
+description VARCHAR (100),
+cost NUMERIC,
+txnDate DATE,
+category VARCHAR (25),
+groupName VARCHAR (50), 
+updatedAt DATE,
+deletedAt DATE
+);
+
+--SELECT * FROM testMaster2;
+--SELECT * FROM testMaster ORDER BY deletedAt DESC;
+
+DROP TABLE testMaster;
+
+CREATE TABLE testUsers (
+tableID INTEGER NOT NULL PRIMARY KEY,
+expenseID INTEGER,
+UserName varchar(30),
+UserBalance numeric
+);
+
+CREATE TABLE testDeleted_trxn (
+tableID INTEGER NOT NULL PRIMARY KEY,
+expenseID INTEGER,
+description VARCHAR (100),
+cost NUMERIC,
+txnDate DATE,
+category VARCHAR (25),
+groupName VARCHAR (50), 
+updatedAt DATE,
+deletedAt DATE
+);
+
+CREATE TABLE testDeleted_users (
+tableID INTEGER NOT NULL PRIMARY KEY,
+expenseID INTEGER,
+UserName varchar(30),
+UserBalance numeric
+);
