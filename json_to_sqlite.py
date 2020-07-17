@@ -1,8 +1,7 @@
 """
 Creates sqlite table
 Inserts into the table all records from Plaid API
-To Do: Figure outn why I the splitwiseDB.db is locked and not the DBnew.db
-    Write code for, if TABLE already is created, update the table
+To Do:
 """
 
 import sqlite3
@@ -11,9 +10,8 @@ from pathlib import Path
 
 #function called from plaid_api_access
 def import_to_sqlite(plaid_df, table_name):
-    #why can't I access the original splitwiseDB? Ugggg
-    #This works sqlite3.connect('C:/Users/marcello/sqlite-tools/splitwiseDBnew.db')
-    #this defintely works conn = sqlite3.connect('C:\\Users\\marcello\\sqlite-tools\\splitwiseDBnew.db')
+    #write code to create DB if not exist
+        #if exists but can't access, give warning, but also create new DB and access that one
     database_name = "splitwiseDBnew.db"
     folder_path = Path(r'C:\Users\marcello\sqlite-tools')
     full_path = str(folder_path / database_name)
