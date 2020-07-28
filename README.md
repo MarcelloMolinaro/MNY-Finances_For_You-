@@ -12,15 +12,15 @@ Could also integrate:
 
 1. Packages
 - Plaid
-  -$ pip install plaid-python
-  -https://github.com/plaid/plaid-python
+  - $ pip install plaid-python
+  - https://github.com/plaid/plaid-python
 - Splitwise
-  -$ pip install splitwise
-  -https://github.com/namaggarwal/splitwise
+  - $ pip install splitwise
+  - https://github.com/namaggarwal/splitwise
 - dotenv
-    -$ conda install -c conda-forge python-dotenv
+    - $ conda install -c conda-forge python-dotenv
 
 2. Software 
 - Sqlite3
--Python 3.7
--Anconda (for package management?)
+- Python 3.7
+- Anconda (for package management?)
