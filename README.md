@@ -2,11 +2,12 @@
 This is an application that gets Financial data from a cariety of authenticated sources. It then cleans and imports that data into a single SQLite database hosted locally. Finally, using R, this database is accessed and the data are visualized. 
 Could also integrate:
   Tableau
-  Twilio
+  Twilio- weekly confirmationthat rpogram ran sucessfully?
   Hosting Database online...like AWS
 
--To Do/note: Have I programmed the creation of the databse?
-          :Does Plaid have access to my data?
+-To Do/notes: 
+    - Have I programmed the creation of the databse? 
+     - Does Plaid have access to my data?
 
 ## Dependencies
 
