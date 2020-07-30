@@ -29,10 +29,11 @@ This is an application that gets Financial data from a cariety of authenticated 
 
 ## HOW TO
 
-1. You must create a .env file in your "Plaid Files" folder that contains all of your plaid keys
+1. You must create a .env file in your "Plaid Files" folder that contains all of your plaid credentials
   - You do this by making a plaid account
   - Applying for the developer access gives 100 free access tokens rather than 5 I think, just explain why you want more!
-  - Run the sandbox tutorial and then run it in the development environment to create access tokens
+  - YOu now have your client_ID, SECRET, etc which go into your file: *".env"*
+  - Run the sandbox tutorial and then run it in the development environment to create account access-tokens
   - Save those access tokens in the file: *"plaid_access_tokens"*
 2. You must create a sqlite database
   - This is done rather easily in the sqlite3 program
