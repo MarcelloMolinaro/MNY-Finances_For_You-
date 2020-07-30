@@ -41,3 +41,10 @@ This is an application that gets Financial data from a cariety of authenticated 
   - `sqlite3 .open "DatabaseName.db"`
   - This will create the database in your current directory
   - make sure to provide this same name and same directory to the file: *"plaid_data_to_sqlite"*
+3. Run the file *"plaid_get_data"*
+  - Using python, run the file!
+  - If you also have a splitwise account, you can use the splitwise files to import that data
+      - there is a little more setup there...in progress
+  - To get account names (in english) that is still in progress too
+      -There is a file that has SQL code for all of my account names but that is manual as of right now.
+      - File name: *"plaid_accounts_to_sqlite"*
