@@ -5,9 +5,9 @@ Could also integrate:
   Twilio- weekly confirmationthat rpogram ran sucessfully?
   Hosting Database online...like AWS
 
--To Do/notes: 
-    - Have I programmed the creation of the databse? 
-     - Does Plaid have access to my data?
+**To Do/notes:**
+- Have I programmed the creation of the databse? NO.
+- Does Plaid have access to my data?
 
 ## Dependencies
 
