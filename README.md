@@ -9,6 +9,7 @@ This is an application that gets Financial data from a variety of authenticated 
 **To Do/notes:**
 - Have I programmed the creation of the databse? NO.
 - Does Plaid have access to my data?
+- Build out a Venmo integration
 
 ## Dependencies
 
