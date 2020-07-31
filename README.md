@@ -1,5 +1,5 @@
 # Finance_API_and_Visualization
-This is an application that gets Financial data from a cariety of authenticated sources. It then cleans and imports that data into a single SQLite database hosted locally. Finally, using R, this database is accessed and the data are visualized. 
+This is an application that gets Financial data from a variety of authenticated sources. It then cleans and imports that data into a single SQLite database hosted locally. Finally, using R, this database is accessed and the data are visualized. 
 
 **Could also integrate:**
   - Tableau
@@ -32,8 +32,8 @@ This is an application that gets Financial data from a cariety of authenticated 
 1. You must create a .env file in your "Plaid Files" folder that contains all of your plaid credentials
   - You do this by making a plaid account
   - Applying for the developer access gives 100 free access tokens rather than 5 I think, just explain why you want more!
-  - YOu now have your client_ID, SECRET, etc which go into your file: *".env"*
-  - Run the sandbox tutorial and then run it in the development environment to create account access-tokens
+  - You now have your client_ID, SECRET, etc which go into your file: *".env"*
+  - Run the sandbox tutorial first to seeif it works and then run it in the development environment to create account access-tokens
   - Save those access tokens in the file: *"plaid_access_tokens"*
 2. You must create a sqlite database
   - This is done rather easily in the sqlite3 program
