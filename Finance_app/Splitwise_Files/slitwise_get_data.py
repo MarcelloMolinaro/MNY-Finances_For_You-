@@ -1,21 +1,31 @@
 """This is the meat of extract data from the Splitwise API
 as long as an access token exists:
-    (dict comprised of oauth_token and oauth_token_secret)
 This code then stores data in sql database 
 If databaseis locked, it is likely becasue the python connection was never sucessfully closed!"""
 #https://github.com/namaggarwal/splitwise
 from splitwise import Splitwise
-import config as Config
+#import config as Config
 import pandas as pd
 import datetime
-import access_token as Access
-import sqlite_splitwise_methods as sql_split_mthds
+#import access_token as Access
+import splitwise_sqlite_methods as sql_split_mthds
+
+#these only help with sourcing from .env file
+from os.path import join, dirname
+from dotenv import load_dotenv
+import os
+
+dotenv_path = join(dirname(__file__), '.env')
+load_dotenv(dotenv_path)
 
 #assumes access token is accurate/up-to-date
-accessdict = Access.accessdict
-
-sObj = Splitwise(Config.consumer_key,Config.consumer_secret)
+accessdict = {
+  "oauth_token": os.getenv('oauth_token'),
+  "oauth_token_secret": os.getenv('oauth_token_secret')
+}
+sObj = Splitwise(os.getenv('consumer_key'), os.getenv('consumer_secret'))
 #if error, run get access token script, end, run this again somehow
+
 sObj.setAccessToken(accessdict)
 #parameterize the item and date limits?
 #I used updated after to catch updates and new items, since update=getDate for un-modified expenses
