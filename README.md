@@ -1,4 +1,5 @@
-# Finance API and Visualization: MNY (Formerly Finance_For_You)
+# MNY (Formerly Finance_For_You)
+# Finance API, ETL, and Visualization 
 This is an application that gets Financial data from a variety of authenticated sources. It then cleans and imports that data into a single SQLite database hosted locally. Finally, using R, this database is accessed and the data are visualized.
 
 **Could also integrate:**
