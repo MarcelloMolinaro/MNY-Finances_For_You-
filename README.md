@@ -1,16 +1,11 @@
 # MNY (Formerly Finance_For_You)
-# Finance API, ETL, and Visualization 
+### Finance API, ETL, and Visualization 
 This is an application that gets Financial data from a variety of authenticated sources. It then cleans and imports that data into a single SQLite database hosted locally. Finally, using R, this database is accessed and the data are visualized.
 
 **Could also integrate:**
   - Tableau
-  - Twilio- weekly confirmationthat rpogram ran sucessfully?
+  - Twilio- weekly confirmation that orogram ran sucessfully?
   - Hosting Database online...like AWS
-
-**To Do/notes:**
-- Have I programmed the creation of the databse? NO.
-- Does Plaid have access to my data?
-- Build out a Venmo integration
 
 ## Dependencies
 
