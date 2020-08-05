@@ -4,10 +4,19 @@ This is an application that gets Financial data from a variety of authenticated 
 
 **Could Expand to include:**
   - Tableau
-  - Twilio- weekly confirmation that orogram ran sucessfully?
+  - Twilio- weekly confirmation that program ran sucessfully?
   - Hosting Database online...like AWS
 
-## Dependencies
+## Who is this for?
+This open source project is intended for anyone who is interested in owning and storing their financial data. This is for anyone tired of the same, static, ineffective visualizations provided by the standard personal finance services. This is for anyone who has ever tried to download more than 2 years of credit card transaction history!
+
+## Why is this different?
+Doesn't MINT do all of this and more? Well... yes. But MINT is owned by intuit and they are selling your data, though it is anonymized.
+This program provides the framework to pull, store, and visualize your personal financial data. YOU own YOUR data. YOU store it. YOu chose how you want to visualize it, though I have also provided a framework for that. You can connect to any institution supported by PLAID (which does not sell or see your data) and any institution that has an API (Splitwise, Venmo, Coinbase, etc.)
+
+## How do I use it?
+
+#### Dependencies
 
 1. Packages
     - Plaid
@@ -24,24 +33,38 @@ This is an application that gets Financial data from a variety of authenticated 
     - Python 3.7
     - Anconda (for package management?)
 
-## HOW TO
+#### HOW TO
 
-1. You must create a .env file in your "Plaid Files" folder that contains all of your plaid credentials
+1. You must create a .env file in your "Plaid Files" folder that contains your plaid credentials
     - You do this by making a plaid account
     - Applying for the developer access gives 100 free access tokens rather than 5 I think, just explain why you want more!
     - You now have your client_ID, SECRET, etc which go into your file: *".env"*
-    - Run the sandbox tutorial first to seeif it works and then run it in the development environment to create account access-tokens
+2. You must modify your *"plaid_access_tokens.py"* file to reflect your own Bank Account access tokens
+    - Run the PLAID sandbox tutorial first to see if it works
+      -https://dashboard.plaid.com/overview/sandbox
+    - Then run in the development environment to create bank account access-tokens
+      - Create as many accounts as you wish. This can be bank accounts, investment accounts, and credit cards, etc.
     - Save those access tokens in the file: *"plaid_access_tokens"*
 2. You must create a sqlite database
     - This is done rather easily in the sqlite3 program
-    - after giving the alias of opening the sqlite3 program: sqlite3 run... 
-    - `sqlite3 .open "DatabaseName.db"`
+    - after naming the sqlite3 path with the alias of "sqlite3", in BASH I run `sqlite3 .open "DatabaseName.db"`
     - This will create the database in your current directory
     - make sure to provide this same name and same directory to the file: *"plaid_data_to_sqlite"*
+      - ```python
+        database_name = "DatabaseName.db"
+        folder_path = Path(r'C:\Users\marcello\sqlite-tools')
+        ````
 3. Run the file *"plaid_get_data"*
     - Using python, run the file!
-    - If you also have a splitwise account, you can use the splitwise files to import that data
-        - there is a little more setup there...in progress
-    - To get account names (in english) that is still in progress too
-        -There is a file that has SQL code for all of my account names but that is manual as of right now.
-        - File name: *"plaid_accounts_to_sqlite"*
+      - If you also have a splitwise account, you can use the splitwise files to import that data
+          - there is a little more setup there...in progress
+      - To get account names (in english) that is still in progress too
+          -There is a file that has SQL code for all of my account names but that is manual as of right now.
+          - File name: *"plaid_accounts_to_sqlite"*
+4. Run the R file
+        
+## How does it work?
+A Python script connects to the PLAID API `plaid_get_data.py`. Transaction data is then imported, cleaned, and loaded into a SQLite database. That database is then queried by an R script and after some more cleaning, the data are graphed and visualized.
+
+Let me know if you use this! Submit pull requests!
+Thank you.
