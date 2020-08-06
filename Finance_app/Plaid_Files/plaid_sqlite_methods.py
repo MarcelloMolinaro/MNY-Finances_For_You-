@@ -8,6 +8,7 @@ import sqlite3
 
 #changed indexNum from "index"
 #replaced all "." with "_"'s
+														
 col_names_type =  '''
         indexNum INTEGER, 
         account_id TEXT,
@@ -18,6 +19,17 @@ col_names_type =  '''
         category_id INTEGER,
         date DATETIME,
         iso_currency_code TEXT, 
+        
+        merchant_name TEXT,
+        name TEXT,
+        payment_channel TEXT,
+        pending INTEGER,
+        pending_transaction_id TEXT,
+        transaction_code TEXT,
+        transaction_id TEXT,
+        transaction_type TEXT,
+        unofficial_currency_code TEXT,
+
         location_address TEXT,
         location_city TEXT,
         location_country TEXT,
@@ -26,9 +38,7 @@ col_names_type =  '''
         location_postal_code TEXT,
         location_region TEXT,
         location_store_number TEXT,
-        merchant_name TEXT,
-        name TEXT,
-        payment_channel TEXT,
+        
         payment_meta_by_order_of TEXT,
         payment_meta_payee TEXT,
         payment_meta_payer TEXT,
@@ -36,13 +46,8 @@ col_names_type =  '''
         payment_meta_payment_processor TEXT,
         payment_meta_ppd_id TEXT,
         payment_meta_reason TEXT,
-        payment_meta_reference_number TEXT,
-        pending INTEGER,
-        pending_transaction_id TEXT,
-        transaction_code TEXT,
-        transaction_id TEXT,
-        transaction_type TEXT,
-        unofficial_currency_code TEXT'''
+        payment_meta_reference_number TEXT
+        '''
 col_names = '''
         indexNum,
         account_id,
@@ -53,6 +58,17 @@ col_names = '''
         category_id,
         date,
         iso_currency_code,
+        
+        merchant_name,
+        name,
+        payment_channel,
+        pending,
+        pending_transaction_id,
+        transaction_code,
+        transaction_id,
+        transaction_type,
+        unofficial_currency_code,
+        
         location_address,
         location_city,
         location_country,
@@ -61,9 +77,7 @@ col_names = '''
         location_postal_code,
         location_region,
         location_store_number,
-        merchant_name,
-        name,
-        payment_channel,
+        
         payment_meta_by_order_of,
         payment_meta_payee,
         payment_meta_payer,
@@ -71,13 +85,8 @@ col_names = '''
         payment_meta_payment_processor,
         payment_meta_ppd_id,
         payment_meta_reason,
-        payment_meta_reference_number,
-        pending,
-        pending_transaction_id,
-        transaction_code,
-        transaction_id,
-        transaction_type,
-        unofficial_currency_code'''
+        payment_meta_reference_number
+        '''
 
 #Create table SQLite syntax
 def createTable(connection, table_name):

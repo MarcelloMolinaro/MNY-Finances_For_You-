@@ -10,6 +10,10 @@ import datetime
 import plaid
 
 '''To DO
+**To Do/notes:**
+- Have I programmed the creation of the databse? NO.
+- Does Plaid have access to my data?
+- Build out a Venmo integration
 NEED TO RUN THIS PROGRAM IN GIT BASH-the client_id is weird otherwise
 Use webhook and not a scheduled program run, to pull this info?
 Tie R to sqlite and run analysis there
