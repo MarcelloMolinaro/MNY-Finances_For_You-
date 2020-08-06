@@ -64,7 +64,7 @@ This program provides the framework to pull, store, and visualize your personal 
 4. Run the R file
         
 ## How does it work?
-A Python script connects to the PLAID API `plaid_get_data.py`. Transaction data is then imported, cleaned, and loaded into a SQLite database. That database is then queried by an R script and after some more cleaning, the data are graphed and visualized.
+A Python script connects to the PLAID API `plaid_get_data.py`. Transaction data are then imported, cleaned, and loaded into a SQLite database. That database is then queried by an R script and after some more cleaning, the data are graphed and visualized.
 
 Let me know if you use this! Submit pull requests!
 Thank you.
