@@ -2,11 +2,6 @@
 ### Finance API, ETL, and Visualization 
 This is an application that gets Financial data from a variety of authenticated sources. It then cleans and imports that data into a single SQLite database hosted locally. Finally, using R, this database is accessed and the data are visualized.
 
-**Could Expand to include:**
-  - Tableau
-  - Twilio- weekly confirmation that program ran sucessfully?
-  - Hosting Database online...like AWS
-
 ## Who is this for?
 This open source project is intended for anyone who is interested in owning and storing their financial data. This is for anyone tired of the same, static, ineffective visualizations provided by the standard personal finance services. This is for anyone who has ever tried to download more than 2 years of credit card transaction history!
 
@@ -16,7 +11,7 @@ This program provides the framework to pull, store, and visualize your personal 
 
 ## How do I use it?
 
-#### Dependencies
+#### Dependencies:
 
 1. Packages
     - Plaid
@@ -33,7 +28,7 @@ This program provides the framework to pull, store, and visualize your personal 
     - Python 3.7
     - Anconda (for package management?)
 
-#### HOW TO
+#### How To:
 
 1. You must create a .env file in your "Plaid Files" folder that contains your plaid credentials
     - You do this by making a plaid account
