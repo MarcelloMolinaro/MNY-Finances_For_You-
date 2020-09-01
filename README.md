@@ -49,6 +49,7 @@ This program provides the framework to pull, store, and visualize your personal 
         database_name = "DatabaseName.db"
         folder_path = Path(r'C:\Users\marcello\sqlite-tools')
         ````
+      - If you chose to use the Splitwise implementation as well, you'll need to add your Database path to the *"splitwise_sqlite_methods.py"* file as well!
 3. Run the file *"plaid_get_data"*
     - Using python, run the file!
       - If you also have a splitwise account, you can use the splitwise files to import that data
