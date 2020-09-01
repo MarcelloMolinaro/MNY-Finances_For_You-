@@ -105,7 +105,10 @@ def updateTable(connection, table_name, temp_table):
                         (SELECT transaction_id FROM '''+ table_name + ") " + \
                 "AND pending != 1"
                 ) 
-        
+        #this causes dupes every time there is a new access token (hopefully not again! thanks plaid...)
+        #the transaction_id for each item changes so it dupes records. Code for removing 
+        #dupes is in APP sqlite files
+                            
 def countRows(connection, table_name):
         command = "SELECT count(*) FROM " + table_name
         connection.execute(command)

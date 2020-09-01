@@ -22,7 +22,7 @@ Tie R to sqlite and run analysis there
 #Defines the .env file
 dotenv_path = join(dirname(__file__), '.env')
 load_dotenv(dotenv_path)
-print (os.getenv('PLAID_ENV'))
+#print (os.getenv('PLAID_ENV'))
 
 #fetches the variables necessary for interfacing with the API
 PLAID_CLIENT_ID= os.environ.get('PLAID_CLIENT_ID')
@@ -34,6 +34,7 @@ PLAID_ENV= os.environ.get('PLAID_ENV', 'development') #Default to development
 #PLAID_ENV='development'
 #print(PLAID_CLIENT_ID, PLAID_SECRET, PLAID_PUBLIC_KEY, PLAID_PRODUCTS, PLAID_COUNTRY_CODES, PLAID_ENV)
 
+print("making API call...")
 #Call to the API. PLaid object stored in "client"
 client = plaid.Client(client_id = PLAID_CLIENT_ID, 
                       secret= PLAID_SECRET, 
