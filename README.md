@@ -7,7 +7,7 @@ This open source project is intended for anyone who is interested in owning and 
 
 ## Why is this different?
 Doesn't MINT do all of this and more? Well... yes. But MINT is owned by intuit and they are selling your data, though it is anonymized.
-This program provides the framework to pull, store, and visualize your personal financial data. YOU own YOUR data. YOU store it. YOu chose how you want to visualize it, though I have also provided a framework for that. You can connect to any institution supported by PLAID (which does not sell or see your data) and any institution that has an API (Splitwise, Venmo, Coinbase, etc.)
+This program provides the framework to pull, store, and visualize your personal financial data. YOU own YOUR data. YOU store it. YOU chose how you want to visualize it, though I have also provided a framework for that. You can connect to any institution supported by PLAID (which does not sell or see your data) and any institution that has an API (Splitwise, Venmo, Coinbase, etc.)
 
 ## How do I use it?
 
@@ -44,7 +44,7 @@ This program provides the framework to pull, store, and visualize your personal 
     - This is done rather easily in the sqlite3 program
     - after naming the sqlite3 path with the alias of "sqlite3", in BASH I run `sqlite3 .open "DatabaseName.db"`
     - This will create the database in your current directory
-    - make sure to provide this same name and same directory to the file: *"plaid_data_to_sqlite"*
+    - make sure to provide this same name and same directory to the file: *"plaid_data_to_sqlite.py"*
       - ```python
         database_name = "DatabaseName.db"
         folder_path = Path(r'C:\Users\marcello\sqlite-tools')
