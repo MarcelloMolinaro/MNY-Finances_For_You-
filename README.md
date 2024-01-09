@@ -6,8 +6,8 @@ This is an application that gets Financial data from a variety of authenticated 
 This open source project is intended for anyone who is interested in owning and storing their financial data. This is for anyone tired of the same, static, ineffective visualizations provided by the standard personal finance services. This is for anyone who has ever tried to download more than 2 years of credit card transaction history!
 
 ## Why is this different?
-Doesn't MINT do all of this and more? Well... yes. But MINT is owned by intuit and they are selling your data, though it is anonymized.
-This program provides the framework to pull, store, and visualize your personal financial data. YOU own YOUR data. YOU store it. YOU chose how you want to visualize it, though I have also provided a framework for that. You can connect to any institution supported by PLAID (which does not sell or see your data) and any institution that has an API (Splitwise, Venmo, Coinbase, etc.)
+Doesn't MINT do all of this and more? Well... yes. But MINT is owned by Intuit and they are profitting from your data, though they do say it is anonymized.
+This program provides the framework to pull, store, and visualize your personal financial data. YOU own your data. YOU store it. YOU chose how you want to visualize it, though a framework for visualization has been provided. You can connect to any institution supported by PLAID (which does not sell or see your data) and any institution that has an API (Splitwise, Venmo, Coinbase, etc.)
 
 ## How do I use it?
 
